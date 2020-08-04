@@ -27,5 +27,5 @@ dw 0xaa55
 
 ; boot sector = sector 1 of cyl 0 of head 0 of hdd 0
 ; from now on = sector 2 ...
-time 256 dw 0xdada ; sector 2 = 512 bytes
+times 256 dw 0xdada ; sector 2 = 512 bytes
 times 256 dw 0xface ; sector 3 = 512 bytes
