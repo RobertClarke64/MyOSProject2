@@ -1,4 +1,4 @@
-mov ah, 0x0e0 ; tty
+mov ah, 0x0e ; tty
 mov al, [the_secret]
 int 0x10 ; we already saw this doesn't work, right?
 
