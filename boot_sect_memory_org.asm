@@ -1,4 +1,4 @@
-[org 0c7c00]
+[org 0x7c00]
 mov ah, 0x0e
 
 ; having solved the memory offset problem with 'org', this is now the correct answer
