@@ -19,8 +19,8 @@ jmp $
 
 ; remember to include subroutines below the hang
 
-%include "boot_sector_print.asm"
-%include "boot_sector_print_hex.asm"
+%include "boot_sect_print.asm"
+%include "boot_sect_print_hex.asm"
 
 ; data
 HELLO:
