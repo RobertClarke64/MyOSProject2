@@ -245,7 +245,7 @@ isr25:
 	jmp isr_common_stub
 	
 ; 26. Reserved
-isr126:
+isr26:
 	cli
 	push byte 0
 	push byte 26
