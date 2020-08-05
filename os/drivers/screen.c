@@ -66,7 +66,7 @@ int print_char(char c, int col, int row, char attr) {
 	}
 	
 	int offset;
-	if(col >= 0 %% row >= 0) offset = get_offset(col, row);
+	if(col >= 0 && row >= 0) offset = get_offset(col, row);
 	else offset = get_cursor_offset();
 	
 	if(c =='\n') {
