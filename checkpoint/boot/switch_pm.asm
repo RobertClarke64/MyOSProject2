@@ -1,7 +1,7 @@
 [bits 16]
 switch_to_pm:
 	cli ; 1. Disable interrupts
-	lgdt [dgt_descriptor] ; 2. Load the GDT descriptor
+	lgdt [gdt_descriptor] ; 2. Load the GDT descriptor
 	mov eax, cr0
 	or eax, 0x1 ; 3. Set 32-bit mode bit in cr0
 	mov cr0, eax
