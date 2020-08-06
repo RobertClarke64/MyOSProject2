@@ -1,7 +1,7 @@
 #ifndef IDT_H
 #define IDT_H
 
-#include "types.h"
+#include "type.h"
 
 /* Segment sectors */
 #define KERNEL_CS 0x08
