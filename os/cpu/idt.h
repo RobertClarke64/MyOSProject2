@@ -18,18 +18,17 @@ typedef struct {
 	 * Bits 3-0: bits 1110 = decimal 14 = "32 bit interrupt gate" */
 	u8 flags;
 	u16 high_offset; /* Higher 16 bits of handler function address */
-} __attribute__((packed)) idt_gate_t;
+} idt_gate_t;
 
 /* A pointer to the array of interrupt handlers.
  * Assembly instruction 'lidt' will read it */
 typedef struct {
 	u16 limit;
 	u32 base;
-} __attribute__((packed)) idt_register_t;
+} idt_register_t;
 
 #define IDT_ENTRIES 256
-// idt_gate_t idt[IDT_ENTRIES];
-idt_gate_t *idt;
+idt_gate_t idt[IDT_ENTRIES];
 idt_register_t idt_reg;
 
 /* Functions implemented in idt.c */
