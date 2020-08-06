@@ -3,10 +3,10 @@
 
 #include "../cpu/type.h"
 
-void memory_copy(u8 *source, u8 *dest, int nbytes);
-void mem_set(u8 *dest, u8 val, u32 len);
+void memory_copy(uint8_t *source, uint8_t *dest, int nbytes);
+void mem_set(uint8_t *dest, uint8_t val, uint32_t len);
 
 /* At this point there is no 'free' implemented */
-u32 kmalloc(u32 size, int align, u32 *phys_addr);
+uint32_t kmalloc(uint32_t size, int align, uint32_t *phys_addr);
 
 #endif
