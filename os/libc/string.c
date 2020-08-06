@@ -23,7 +23,7 @@ void hex_to_ascii(int n, char str[]) {
 	append(str, 'x');
 	char zeros = 0;
 	
-	s32 tmp;
+	int32_t tmp;
 	int i;
 	for(i = 28; i > 0; i -= 4) {
 		tmp = (n >> i) & 0xF;
@@ -67,11 +67,11 @@ void backspace(char s[]) {
 }
 
 /* K&R
- * Returns < 0 if s1<s2, 0 if s1==s2, >0 if s1>s2 */
-int strcmp(char s1[], char s2[]) {
+ * Returns < 0 if int1_t<int2_t, 0 if int1_t==int2_t, >0 if int1_t>int2_t */
+int strcmp(char int1_t[], char int2_t[]) {
 	int i;
-	for(i = 0; s1[i] == s2[i]; i++) {
-		if(s1[i] == '\0') return 0;
+	for(i = 0; int1_t[i] == int2_t[i]; i++) {
+		if(int1_t[i] == '\0') return 0;
 	}
-	return s1[i] - s2[i];
+	return int1_t[i] - int2_t[i];
 }
