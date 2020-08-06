@@ -309,6 +309,8 @@ isr31:
 	push byte 31
 	jmp isr_common_stub
 	
+	
+	
 ; IRQ Handlers
 irq0:
 	cli
